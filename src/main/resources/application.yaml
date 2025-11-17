@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: Personal Finance Manager
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/finance_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: false
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+logging:
+  level:
+    root: INFO
+    com.finance: DEBUG
+
+jwt:
+  secret: mySecretKeyForJWTTokenGenerationMakeItLongAndComplexAtLeast256BitsLongForSecurityPurpose
+  expiration: 86400000
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+  api-docs:
+    path: /v3/api-docs
+    enabled: true
