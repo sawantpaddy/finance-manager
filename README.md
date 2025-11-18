@@ -231,7 +231,7 @@ This is a personal learning project, but suggestions and feedback are welcome!
 
 **Paddy Sawant**
 - GitHub: [@sawantpaddy](https://github.com/sawantpaddy)
-- LinkedIn: [LinkedIn]
+- LinkedIn: [https://www.linkedin.com/in/pandurang-sawant-80961a209/]
 - Email: [pandurang.a.sawant@gmail.com]
 
 ## 📄 License
